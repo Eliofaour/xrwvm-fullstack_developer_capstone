@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealerships</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 6px;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Navigation bar */
+        .navbar {
+            height: 42px;
+            background-color: #08c5c9;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .navbar h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #111;
+            width: 115px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 12px;
+            font-size: 9px;
+        }
+
+        .nav-links a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        .user-section {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .username {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .logout {
+            color: #111;
+            text-decoration: underline;
+            font-size: 9px;
+        }
+
+        /* Main content */
+        .content {
+            padding-top: 7px;
+        }
+
+        .dealer-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dealer-title h1 {
+            margin: 0;
+            color: #777;
+            font-size: 19px;
+        }
+
+        .review-button {
+            background-color: #12c4c9;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 7px;
+            font-size: 7px;
+            font-weight: bold;
+        }
+
+        .review-button::before {
+            content: "☷";
+            margin-right: 4px;
+        }
+
+        .address {
+            color: #777;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+
+        /* Dealership card */
+        .dealer-card {
+            width: 105px;
+            min-height: 120px;
+            margin-top: 16px;
+            margin-left: 2px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            padding: 8px;
+            background-color: white;
+            position: relative;
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #ffc400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            font-size: 12px;
+        }
+
+        .dealer-description {
+            font-size: 7px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .vehicle {
+            font-size: 6px;
+            color: #777;
+            font-style: italic;
+        }
+
+        /* Sample watermark */
+        .sample {
+            position: absolute;
+            top: 55px;
+            left: 95px;
+            font-size: 105px;
+            font-weight: bold;
+            color: white;
+            -webkit-text-stroke: 2px #6c91d8;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+            z-index: 10;
+            pointer-events: none;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>Dealerships</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="user-section">
+            <span class="username">root</span>
+            <a href="#" class="logout">Logout</a>
+        </div>
+
+    </nav>
+
+    <main class="content">
+
+        <div class="dealer-title">
+            <h1>Fix San Car Dealership</h1>
+
+            <button class="review-button">
+                Write a review
+            </button>
+        </div>
+
+        <div class="address">
+            San Francisco,9 9 California
+        </div>
+
+        <div class="dealer-card">
+
+            <div class="icon">●</div>
+
+            <div class="dealer-description">
+                Expanded global<br>
+                groupware
+            </div>
+
+            <div class="vehicle">
+                Lion Frames Mazda MX-5<br>
+                (2000)
+            </div>
+
+        </div>
+
+    </main>
+
+    
+</body>
+</html>
